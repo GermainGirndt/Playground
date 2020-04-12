@@ -1,0 +1,124 @@
+body{
+    background-color: #565554;
+}
+header{
+    background-color: #C40010;
+    color: white;
+    padding: 0px;
+    padding-top: 25px;
+    border-radius: 10px;
+}
+
+.header-description{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+
+
+.main-container{
+    text-align: center;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: cornsilk;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    
+    
+}
+
+section{
+
+    font-size: 15px;
+    background-color: #000F08;
+    padding: 20px;
+    float:center;
+    clear:none;  
+}
+
+.form-titles{
+    color: white; 
+}
+
+.adults-and-kids-information{
+    display: inline-block;
+    text-align: left;
+    width: 475px;
+    height: 300px;
+    column-count: 2;
+    column-gap: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+
+ 
+ 
+}
+
+
+.adults-data{
+    width: 50%;
+    padding: 10px;
+
+
+}
+
+
+
+.kids-data{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+input{
+    padding-bottom: 6px;
+    padding-right: 8px;
+    margin-bottom: 8px;
+}
+
+.calculate{
+    padding-top: 7px;
+
+    border-radius: 2px;
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+
+.answer1{
+    font-size: 0px;
+    background-color: #EEE82C;
+    color: #3D1C02;
+
+    overflow: initial;
+    
+
+}
+.answer2{
+
+    font-size: 15px;
+}
+
+footer{
+    float: center;
+    clear:none;
+
+}
+.signature{
+    font-size: 16px;
+    color:white;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+}

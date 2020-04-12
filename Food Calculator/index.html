@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Food Calculator 2020</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Food Calculator 2020</h1>
+            <p class="header-description">Promoting good food since 2020.</p><br>
+        </header>
+        <section>
+            <div class="adults-and-kids-information">
+            <form class="adults-data">
+                <p class="form-titles">Adults:</p>
+                <input id="adults" name="adults" type="number" placeholder="Number of Adults">
+                <input id="adultsAperitive" name="aperitive" type="number" placeholder="Aperitives (g)">
+                <input id="adultsJuice" name="juice" type="number" placeholder="Juice (ml)">
+                <input id="adultsMainDish" name="mainDish" type="number" placeholder="Main Dish (g)"">
+                <input id="adultsBeverages" name="beverages" type="number" placeholder="Beverages (ml)">
+                <input id="adultsDessert" name="dessert" type="number" placeholder="Dessert (g)">
+            </form>
+            <form class="kids-data">
+                <p class="form-titles">Kids:</p>
+                <input id="kids" name="kids" type="number" placeholder="Number of Kids">
+                <input id="kidsAperitive" name="aperitive" type="number" placeholder="Aperitives (g)">
+                <input id="kidsJuice" name="juice" type="number" placeholder="Juice (ml)">
+                <input id="kidsMainDish" name="mainDish" type="number" placeholder="Main Dish (g)"">
+                <input id="kidsBeverages" name="beverages" type="number" placeholder="Beverages (ml)">
+                <input id="kidsDessert" name="dessert" type="number" placeholder="Dessert (g)">
+            </div>
+            <br>
+
+            <input type="button" class="calculate" onclick="calc()" value="Go!">
+            </form>
+            <div class="answer1">
+                <p id="answer" class="answer2"></p>
+            </div> 
+            <div class="signature"><p>by Germain M. Pereira</p>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
