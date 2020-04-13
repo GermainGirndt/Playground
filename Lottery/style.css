@@ -1,0 +1,96 @@
+body{
+    background-color: gray;
+}
+.main-container{
+    width: 300px;
+    height: 190px;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 20px;
+    border-style: double;
+    border-color: gray;
+    border-width: 5px;
+
+}
+
+.logsContainer{
+    max-width: 150px;
+    float: right;
+}
+
+.lastPlayerAddedLogContainer{
+    visibility: hidden;
+    background-color: yellow;
+    overflow: auto;
+    height: 75px;
+    width: 125px;
+    border: 5px;
+    border-radius: 2px;
+    border-style: double;
+}
+
+.lastAddedPlayerLog{
+    text-align: center;
+    padding: 8px;
+    margin: 6px;
+    font-size: 15px;
+}
+
+.allPlayersLogContainer{
+    visibility: hidden;
+    background-color: green;
+    overflow: auto;
+    height: 150px;
+    width: 125px;
+    float: right;
+    border: 5px;
+    border-radius: 2px;
+    border-style: double;
+}
+
+.allPlayersLog{
+    text-align: center;
+    color: gainsboro;
+    padding: 8px;
+    margin: 6px;
+    font-size: 15px;
+}
+
+h1{
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+form{
+    padding-top: 0px;
+    margin: 0px;
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+.textBox{
+    margin-bottom: 8px;
+    padding: 0px;
+}
+
+.buttons{
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.answer{
+    color: red;
+    padding: 0px;
+}
+
+

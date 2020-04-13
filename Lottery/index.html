@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lottery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    
+<body>
+    <div class="main-container" id="main-container">
+        <header>
+            <h1>Lottery</h1>
+        </header>
+        <section>
+            <h2 class="answer" id ="answer"></h2>
+            <form>
+                <p>Enter player's name:</p>
+                <input type="text" id="userInput" class="textBox"> <br>
+                <div class = "buttons">
+                    <input type="button" class="buttons" id="buttonAddPlayer" value="Add" onclick="add()">
+                    <input type="button" class="buttons" id="buttonRandomPrint" value="Go!" onclick="randomPrint()">
+                    <input type="button" class="buttons" id="buttonClear2" value="Clear" onclick="clearValues()">
+                    <br>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="logsContainer">
+        <div class="lastPlayerAddedLogContainer" id="lastPlayerAddedLogContainer">
+            <p id= "lastAddedPlayerLog" class="lastAddedPlayerLog"></p>
+           </div>
+        <div class="allPlayersLogContainer" id="allPlayersLogContainer">
+            <p id= "allPlayersLog" class="allPlayersLog">Log: <br></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
