@@ -1,12 +1,21 @@
 body{
     background-color: #565554;
 }
+
+@keyframes headerAnimation {
+    
+    0% {background-color: #C40010;}
+    50% {background-color: blue;}
+
+}
+
 header{
     background-color: #C40010;
     color: white;
     padding: 0px;
     padding-top: 25px;
     border-radius: 10px;
+    animation: headerAnimation 6s infinite alternate
 }
 
 .header-description{
@@ -92,9 +101,14 @@ input{
     font-size: 10px;
     text-align: center;
     display: inline-block;
+    transition: font-size 500ms, padding 500ms;
 
 }
 
+.calculate:hover{
+    padding: 15px;
+    font-size: 14px;
+}
 
 .answer1{
     font-size: 0px;
@@ -118,7 +132,11 @@ footer{
 .signature{
     font-size: 16px;
     color:white;
-    text-align: right;
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+    transform: translateY(50%;);
+    text-align: bottom;
     padding: 0px;
     margin: 0px;
 }

@@ -2,26 +2,30 @@
 
 
 
+function sanitizeInput(input){
+  input = input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return input
+}
 
 
 
 function calc() {
  
-let adultsNumber = document.getElementById("adults").value;
-let adultsAperitive = document.getElementById("adultsAperitive").value;
-let adultsJuice = document.getElementById("adultsJuice").value;
-let adultsMainDish = document.getElementById("adultsMainDish").value;
-let adultsBeverages = document.getElementById("adultsBeverages").value ;
-let adultsDessert = document.getElementById("adultsDessert").value;
+let adultsNumber = sanitizeInput(document.getElementById("adults").value);
+let adultsAperitive = sanitizeInput(document.getElementById("adultsAperitive").value);
+let adultsJuice = sanitizeInput(document.getElementById("adultsJuice").value);
+let adultsMainDish = sanitizeInput(document.getElementById("adultsMainDish").value);
+let adultsBeverages = sanitizeInput(document.getElementById("adultsBeverages").value);
+let adultsDessert = sanitizeInput(document.getElementById("adultsDessert").value);
 
   
 
-let kidsNumber = document.getElementById("kids").value;
-let kidsAperitive = document.getElementById("kidsAperitive").value;
-let kidsJuice = document.getElementById("kidsJuice").value;
-let kidsMainDish = document.getElementById("kidsMainDish").value;
-let kidsBeverages = document.getElementById("kidsBeverages").value;
-let kidsDessert = document.getElementById("kidsDessert").value;
+let kidsNumber = sanitizeInput(document.getElementById("kids").value);
+let kidsAperitive = sanitizeInput(document.getElementById("kidsAperitive").value);
+let kidsJuice = sanitizeInput(document.getElementById("kidsJuice").value);
+let kidsMainDish = sanitizeInput(document.getElementById("kidsMainDish").value);
+let kidsBeverages = sanitizeInput(document.getElementById("kidsBeverages").value);
+let kidsDessert = sanitizeInput(document.getElementById("kidsDessert").value);
 
 
 let consumedAperitive = adultsNumber * adultsAperitive + kidsNumber * kidsAperitive;

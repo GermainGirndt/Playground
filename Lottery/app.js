@@ -7,13 +7,14 @@ var playersList = [];
 function add(){
 
     let playerToAdd = document.getElementById("userInput").value;
+    playerToAdd = playerToAdd.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     if (playerToAdd != ""){
         playersList.push(playerToAdd);
         console.log(playersList);
         console.log(playersList.length);
         document.getElementById("userInput").value = null;
         document.getElementById("lastPlayerAddedLogContainer").style.visibility = "visible";
-        lastAddedPlayerLog.innerHTML = `Last added: ${playerToAdd}`;
+        lastAddedPlayerLog.innerHTML = `<b>Last added</b>: <br> ${playerToAdd}`;
         document.getElementById("allPlayersLogContainer").style.visibility = "visible";
         allPlayersLog.innerHTML += `${playerToAdd}<br>`;
     } else {
@@ -47,5 +48,5 @@ function clearValues(){
     document.getElementById("lastPlayerAddedLogContainer").style.visibility = "hidden";
     lastAddedPlayerLog.innerHTML = ``;
     document.getElementById("allPlayersLogContainer").style.visibility = "hidden";
-    allPlayersLog.innerHTML = `Log:<br>`;
+    allPlayersLog.innerHTML = `<b>Log:</b><br>`;
 }
